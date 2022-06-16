@@ -1,36 +1,34 @@
 # onepaper-light-module
+## Assignment: Single-page website
 
-<!--
-Provide a one sentence description of what your light module
-provides.
--->
+Now that you have completed the course, it is time to apply what you have learned by completing this assignment
 
-
-## Features
-
-<!--
-Provide a list of the key features this module provides for content
-authors, or whoever the primary user is. For a component template,
-consider providing screenshots of the rendered component and the
-component dialog.
--->
-
-
-## Usage
-
-<!--
-Provide details about how a developer can make the component template,
-or other features provided by the light module, available to content
-authors.
-
-This can include any special instructions about webresources or
-availability. This could include instructions on 3rd party dependencies
-such as jquery.
-
-Describe how a template can be configured with parameters if
-applicable.
--->
-
+## Goal
+The goal is to be able to reproduce this single-page website:
+![Image for Assignment](/images/1585725466_shutterbugs-assignment-goal.png)
+## Task
+Your task is to create a Magnolia light module based on the provided prototype.
+To get you started we provide you with correct page definition:
+```
+title: FE One-Pager
+templateScript: /onepager-light-module/templates/pages/onepager.ftl
+renderType: freemarker
+dialog: onepager-light-module:pages/onepager
+visible: true
+areas:
+  main:
+    availableComponents:
+      section:
+        id: onepager-light-module:components/section
+      banner:
+        id: onepager-light-module:components/banner
+  footer:
+    availableComponents:
+      mtkTextImage:
+        id: mtk:components/textImage
+    templateScript: /onepager-light-module/templates/pages/areas/footerArea.ftl
+    maxComponents: 3
+```
 
 ## Information on Magnolia CMS
 
