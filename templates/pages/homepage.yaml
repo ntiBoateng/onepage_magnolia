@@ -1,0 +1,6 @@
+title: homepage
+templateScript: /onepaper-light-module/templates/pages/homepage.ftl
+renderType: freemarker
+dialog: onepaper-light-module:pages/homepage
+visible: true
+
